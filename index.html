@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Nacional de Tenencia Responsable de Mascotas y Animales de Compañía</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xF2zXUpCj1YndzUhwe1Qn0h6k3De+K7OB+VPs97QFb2Ywl5Ow1N9H5gCvVnA1XW9ODvj8d5kiOzHuCyQDhn1/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://kit.fontawesome.com/acb7689767.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="icons">
+            <i class="fas fa-horse"></i>
+            <i class="fas fa-cat"></i>
+            <i class="fas fa-paw"></i>
+        </div>
+        <h1>Registro Nacional de Tenencia Responsable de Mascotas y Animales de Compañía</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Registro de Mascotas</a>
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#requisitos">Requisitos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preguntas-frecuentes">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#consultas">Consultas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mis-solicitudes">Solicitudes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <form action="#" method="post">
+                <h3>Ingreso con Cédula de Identidad</h3>
+                <label for="run">RUN:</label>
+                <input type="text" id="run" name="run"><br>
+                <label for="numero_documento">Nº de Serie / Nº Documento:</label>
+                <input type="text" id="numero_documento" name="numero_documento"><br>
+                <div class="g-recaptcha" data-sitekey="6LdJDsIpAAAAAAaphvXU_LaRw9hwjOKzhMyec3FB"></div>
+                <input type="submit" value="Ingresar">
+            </form>
+        </section>
+        <section id="requisitos">
+            <h2>Requisitos</h2>
+            <form action="#" method="post">
+        
+                <h3>DATOS ANIMAL</h3>
+                <h4>Nombre:</h4>
+                <input type="text" id="nombre" name="nombre"><br>
+              
+                <h4>Especie:</h4>
+                <select id="especie" name="especie">
+                    <option value="">Selecciona especie</option>
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                </select><br><br>
+              
+                <h4>Sexo:</h4>
+                <label for="macho">Macho <input type="radio" id="macho" name="sexo"></label>
+                <label for="hembra">Hembra <input type="radio" id="hembra" name="sexo"></label>
+                <br><br>
+                <label for="raza"><h4>Raza:</h4></label>
+                <input type="text" id="raza" name="raza"><br>
+              
+                <label for="fecha_nacimiento"><h4>Fecha nacimiento (DD/MM/AAAA):</h4></label>
+                <input type="text" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+              
+                <label for="color"><h4>Color:</h4></label>
+                <input type="text" id="color" name="color"><br>
+              
+                <h4>Modo de obtención:</h4>
+                <label for="recogido">Recogido <input type="checkbox" id="recogido" name="modo_obtencion" value="Recogido"></label>
+                <label for="reubicacion">Reubicación <input type="checkbox" id="reubicacion" name="modo_obtencion" value="Reubicación"></label>
+                <label for="regalo">Regalo <input type="checkbox" id="regalo" name="modo_obtencion" value="Regalo"></label>
+                <label for="nacido_casa">Nacido en casa <input type="checkbox" id="nacido_casa" name="modo_obtencion" value="Nacido en casa"></label>
+                <label for="compra">Compra <input type="checkbox" id="compra" name="modo_obtencion" value="Compra"></label><br>
+                <br>
+                <h4>Razón Tenencia:</h4>
+                <label for="compania">Compañía <input type="checkbox" id="compania" name="razon_tenencia" value="Compañía"></label>
+                <label for="asistencia">Asistencia <input type="checkbox" id="asistencia" name="razon_tenencia" value="Asistencia"></label>
+                <label for="terapia">Terapia <input type="checkbox" id="terapia" name="razon_tenencia" value="Terapia"></label>
+                <label for="trabajo">Trabajo <input type="checkbox" id="trabajo" name="razon_tenencia" value="Trabajo"></label>
+                <label for="seguridad">Seguridad <input type="checkbox" id="seguridad" name="razon_tenencia" value="Seguridad"></label>
+                <label for="deporte">Deporte <input type="checkbox" id="deporte" name="razon_tenencia" value="Deporte"></label>
+                <label for="exposicion">Exposición <input type="checkbox" id="exposicion" name="razon_tenencia" value="Exposición"></label>
+                <label for="reproduccion">Reproducción <input type="checkbox" id="reproduccion" name="razon_tenencia" value="Reproducción"></label>
+                <label for="caza">Caza <input type="checkbox" id="caza" name="razon_tenencia" value="Caza"></label><br>
+                <br>
+                <h3>DATOS MÉDICO VETERINARIO o TÉCNICO VETERINARIO</h3>
+                <label for="nombre_veterinario">Nombres:</label>
+                <input type="text" id="nombre_veterinario" name="nombre_veterinario"><br>
+                <label for="apellidos_veterinario">Apellidos:</label>
+                <input type="text" id="apellidos_veterinario" name="apellidos_veterinario"><br>
+                <label for="rut_veterinario">Rut:</label>
+                <input type="text" id="rut_veterinario" name="rut_veterinario"><br>
+              
+                <label for="medico_tecnico">Médico Veterinario Técnico Veterinario:</label><br>
+                <label for="medico">Médico Veterinario <input type="radio" id="medico" name="medico_tecnico" value="Medico Veterinario"></label><br>
+                <label for="tecnico">Técnico Veterinario <input type="radio" id="tecnico" name="medico_tecnico" value="Técnico Veterinario"></label><br>
+              
+                <label for="comuna">Comuna:</label>
+                <input type="text" id="comuna" name="comuna"><br>
+              
+                <label for="fecha_procedimiento">Fecha procedimiento:</label>
+                <input type="text" id="fecha_procedimiento" name="fecha_procedimiento"><br>
+              
+                <label for="firma_timbre">Firma y Timbre:</label>
+                <input type="text" id="firma_timbre" name="firma_timbre"><br>
+              
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        
+        <section id="preguntas-frecuentes">
+            <h2>Preguntas Frecuentes</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse corrupti vel in adipisci eius dolor. Praesentium numquam sunt, commodi doloremque unde cum neque quis sint. Molestiae quae veniam incidunt asperiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse corrupti vel in adipisci eius dolor. Praesentium numquam sunt, commodi doloremque unde cum neque quis sint. Molestiae quae veniam incidunt asperiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laboriosam in? Provident consequuntur, distinctio deleniti alias architecto blanditiis sunt ipsa. Quam praesentium, doloribus unde rerum officia necessitatibus alias error voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laboriosam in? Provident consequuntur, distinctio deleniti alias architecto blanditiis sunt ipsa. Quam praesentium, doloribus unde rerum officia necessitatibus alias error voluptatum.</p>
+        </section>
+        <section id="consultas">
+            <h2>Consultas</h2>
+            <form action="#" method="post">
+                <label for="microchip">Microchip/Identificador:</label>
+                <input type="text" id="microchip" name="microchip"><br><br>
+                <label for="">Confirmación identidad:</label>
+                <div class="g-recaptcha" data-sitekey="6LdJDsIpAAAAAAaphvXU_LaRw9hwjOKzhMyec3FB"></div>
+                <input type="submit" value="Consultar">
+                <input type="reset" value="Limpiar">
+            </form>
+        </section>
+        <section id="mis-solicitudes">
+            <h2>Solicitudes</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse corrupti vel in adipisci eius dolor. Praesentium numquam sunt, commodi doloremque unde cum neque quis sint. Molestiae quae veniam incidunt asperiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse corrupti vel in adipisci eius dolor. Praesentium numquam sunt, commodi doloremque unde cum neque quis sint. Molestiae quae veniam incidunt asperiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure officia pariatur, debitis eius dolorem maiores voluptatibus dolorum mollitia accusantium. Provident, rerum! Ipsa dolore sit nesciunt fugit? Impedit corporis amet quis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure officia pariatur, debitis eius dolorem maiores voluptatibus dolorum mollitia accusantium. Provident, rerum! Ipsa dolore sit nesciunt fugit? Impedit corporis amet quis!</p>
+        </section>
+    </main>
+    <footer>
+        <p>Los datos registrados en esta plataforma se encuentran protegidos por la Ley 19.628 Sobre Protección de la Vida Privada.</p>
+        <p>Link de Interés: <a href="http://www.subdere.gov.cl">Políticas de Privacidad</a>, <a href="http://www.tenenciaresponsablemascotas.cl">Ley 21.020</a></p>
+        <p>Sigue el Programa de Tenencia Responsable de Animales de Compañía (PTRAC)</p>
+        <p>Versión: req-iteracion-1-1343 23/08/2023 16:10:12</p>
+        <div>
+            <a href="https://www.pinterest.es/" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <i class="fa-brands fa-square-pinterest"></i>
+            <i class="fa-brands fa-square-instagram" style="color: #512e1f"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <a href="https://web.telegram.org/a/" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('.navbar-collapse');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
